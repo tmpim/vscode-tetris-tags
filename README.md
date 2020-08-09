@@ -44,3 +44,30 @@ Add this to your user settings:
         ]
     }
 ```
+
+# Example Code
+
+Example code with template function:
+
+```ts
+/** Clean up a tetris template string and return an array of lines **/
+function tetris(str: TemplateStringsArray): string[] {
+    return str
+        .join("") // TODO: deal with templates
+        .replace(/^\n|\n$/g, "") // Remove leading and trailing newlines
+        .split("\n") // Split back on newlines
+        .map(s => s.padEnd(10, " ").substring(0, 10)); // Make all lines 10 chars
+}
+
+const dtCannon = tetris`
+  LL      
+   L      
+JJ LT#####
+J  TTTI###
+J   SSIZZ#
+OO SSLIJZZ
+OO LLLIJJJ
+`;
+
+console.log(JSON.stringify(dtCannon));
+```
