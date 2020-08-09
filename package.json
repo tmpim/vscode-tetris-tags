@@ -1,0 +1,53 @@
+{
+    "name": "tetris-tags",
+    "displayName": "Tetris Tags",
+    "description": "Syntax highlighting for tetris string literals",
+    "version": "0.0.1",
+    "publisher": "lemmmy",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tmpim/vscode-tetris-tags.git"
+    },
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "tetris",
+                "aliases": [
+                    "Tetris",
+                    "tetris"
+                ],
+                "extensions": [
+                    ".tetris"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "tetris",
+                "scopeName": "source.tetris",
+                "path": "./syntaxes/tetris.json"
+            },
+            {
+                "injectTo": [
+                    "source.js",
+                    "source.js.jsx",
+                    "source.jsx",
+                    "source.ts",
+                    "source.tsx"
+                ],
+                "scopeName": "inline.tagged-template-tetris",
+                "path": "./syntaxes/inline.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.tetris": "tetris"
+                }
+            }
+        ]
+    }
+}

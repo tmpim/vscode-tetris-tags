@@ -1,0 +1,42 @@
+{
+  "scopeName": "source.tetris",
+  "name": "Tetris",
+  "patterns": [
+    {
+      "name": "keyword.tetris.mino.i",
+      "match": "[iI]"
+    },
+    {
+      "name": "keyword.tetris.mino.o",
+      "match": "[oO]"
+    },
+    {
+      "name": "keyword.tetris.mino.t",
+      "match": "[tT]"
+    },
+    {
+      "name": "keyword.tetris.mino.s",
+      "match": "[sS]"
+    },
+    {
+      "name": "keyword.tetris.mino.z",
+      "match": "[zZ]"
+    },
+    {
+      "name": "keyword.tetris.mino.j",
+      "match": "[jJ]"
+    },
+    {
+      "name": "keyword.tetris.mino.l",
+      "match": "[lL]"
+    },
+    {
+      "name": "keyword.tetris.mino.garbage",
+      "match": "#"
+    },
+    {
+      "name": "keyword.tetris.mino.unclearable",
+      "match": "@"
+    }
+  ]
+}
