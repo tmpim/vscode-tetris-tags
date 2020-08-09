@@ -2,7 +2,7 @@
     "name": "tetris-tags",
     "displayName": "Tetris Tags",
     "description": "Syntax highlighting for tetris string literals",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "lemmmy",
     "repository": {
         "type": "git",
